@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f648e3-0175-4420-918d-159a48fc02fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinNotebook.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patterns/Patterns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strings/CheckPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strings/ReverseSentenceWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strings/ReverseString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strings/VowelConsonantCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strings/utilities/CheckNullStringError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVAMATHAMATICS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JAVAMATHAMATICS.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,20 +39,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CheckPalindrome.executor": "Run",
+    "Application.CountVowelsAndConstants.executor": "Run",
+    "Application.ReverseSentenceWord.executor": "Run",
+    "Application.ReverseString.executor": "Run",
     "Application.test.executor": "Run",
     "Application.testClass.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TestClass.executor": "Run",
+    "JUnit.TestClass.testNumberIncPyramid.executor": "Run",
+    "JUnit.TestClass.testSquareHollowPattern.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "devolpment",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/hp/Desktop/JAVAMATHAMATICS",
     "onboarding.tips.debug.path": "C:/Users/hp/IdeaProjects/JAVAMATHAMATICS/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "kotlinNotebook"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
@@ -58,6 +72,54 @@
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-25 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="JAVAMATHAMATICS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JAVAMATHAMATICS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.patterns" />
+      <option name="MAIN_CLASS_NAME" value="test.patterns.TestClass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.testNumberIncPyramid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JAVAMATHAMATICS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.patterns" />
+      <option name="MAIN_CLASS_NAME" value="test.patterns.TestClass" />
+      <option name="METHOD_NAME" value="testNumberIncPyramid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.testSquareHollowPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JAVAMATHAMATICS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.patterns" />
+      <option name="MAIN_CLASS_NAME" value="test.patterns.TestClass" />
+      <option name="METHOD_NAME" value="testSquareHollowPattern" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -73,6 +135,13 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestClass" />
+        <item itemvalue="JUnit.TestClass.testNumberIncPyramid" />
+        <item itemvalue="JUnit.TestClass.testSquareHollowPattern" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
