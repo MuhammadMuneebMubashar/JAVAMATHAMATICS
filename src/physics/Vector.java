@@ -2,56 +2,61 @@ package physics;
 
 public class Vector {
 
-    private Coordinate coordinate;
+    private double x;
+    private double y;
+    private double z;
+
     private static final double EPS = 1e-9;
 
-    public Vector(double x, double y)
+    public Vector(double x , double y)
     {
-        coordinate = new Coordinate(x, y);
+        this.x = x;
+        this.y = y;
     }
 
-    public  Vector(double x, double y, double z)
+    public Vector(double x , double y , double z)
     {
-        coordinate = new Coordinate(x, y);
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
 
     public Vector (double x1 , double x2 , double y1 , double y2)
     {
-        coordinate = new Coordinate(x2 - x1, y2 - y1);
+        this.x = x2 - x1;
+        this.y = y2 - y1;
     }
 
-    public Vector (double x1 , double x2 , double y1 , double y2, double z1, double z2)
+    public Vector (double x1 , double x2 , double y1 , double y2 , double z1 , double z2)
     {
-        coordinate = new Coordinate(x2 - x1, y2 - y1,  z2 - z1);
+        this.x = x2 - x1;
+        this.y = y2 - y1;
+        this.z = z2 - z1;
     }
 
     public double getX()
     {
-        return coordinate.getX();
+        return x;
     }
 
     public double getY()
     {
-        return coordinate.getY();
+        return y;
     }
 
     public double getZ()
     {
-        return coordinate.getZ();
+        return z;
     }
 
-    public  Vector add(Vector vector2 )
+    public Vector add(Vector vector2 )
     {
-        return new Vector(this.getX() + vector2.getX(),
-                this.getY() + vector2.getY(),
-                this.getZ() + vector2.getZ());
+        return new Vector(x + vector2.getX(), y + vector2.getY(), z + vector2.getZ());
     }
 
     public Vector sub(Vector vector2 )
     {
-        return new Vector(this.getX() - vector2.getX(),
-                this.getY() - vector2.getY(),
-                this.getZ() - vector2.getZ());
+        return new Vector(x - vector2.getX(), y - vector2.getY(), z - vector2.getZ());
     }
 
     public double magnitude()
@@ -65,18 +70,9 @@ public class Vector {
 
     public double dotProduct(Vector vector2 )
     {
-        double x = this.getX();
-        double y = this.getY();
-        double z = this.getZ();
-
-        return x * vector2.getX()
-                + y * vector2.getY() +
-                z * vector2.getZ();
-    }
-
-    public double dotProduct(Vector vector2 , double angle)
-    {
-        return this.magnitude() * vector2.magnitude() * Math.cos(angle);
+        return this.getX() * vector2.getX()
+                + this.getY() * vector2.getY() +
+                this.getZ() * vector2.getZ();
     }
 
     @Override
